@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 :root{
 
-    --cor-de-fundo:#FF84E4;
-    --rosa-escuro:#FF57E4;
+    --cor-de-fundo:#2e292d;
+    --rosa-escuro:#a51073;
     --branco:#FFFFFF;
     --botao-ativo:rgba(98, 16, 65, 1);
     --botao-inativo:#830952;
-    --texto-fundo:rgba(255, 132, 206, 0.79);
+    --texto-fundo:rgba(240, 102, 185, 0.79);
 
 }
 
@@ -65,16 +65,36 @@ body{
     display: block;
  }
 
- .ativo{
+ .botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--rosa-escuro);
  }
 
  .abas-textos{
     background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
 
  }
 
+ .aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+   display: none;
+}
+
+ .aba-conteudo-titulo-principal{
+    font-size: 16px;
+    text-align: center;
+ }
+
+ .aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rosa-escuro);
+    text-transform: uppercase;
+ }
 
 @media screen and (min-widht: 768px ) {
     .botoes {
