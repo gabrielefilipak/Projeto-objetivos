@@ -57,10 +57,10 @@ body{
     border-top:none;
 
 }
- .botao:first-child{
+
+.botao:first-child{
     border-radius: 40px 40px 0 0;
  }
-
  .botoes{
     display: block;
  }
@@ -96,8 +96,13 @@ body{
     text-transform: uppercase;
  }
 
+ .contador{
+     font-size: 20px;
+     text-align: center;
+ }
+
 @media screen and (min-widht: 768px ) {
-    .botoes {
+.botoes {
         display: flex;
 
     }
@@ -108,11 +113,6 @@ body{
 
 .botao:last-child {
     border-radius: 0 40px 0 0;
-}
-
-
-
-
-    
+} 
     
 }
